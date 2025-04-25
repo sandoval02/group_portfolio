@@ -1,0 +1,54 @@
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  zoom: 80%;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(13, 22, 35, 0.7), rgba(13, 22, 35, 0.7)), url('https://static.readdy.ai/image/71512ba4cb808841e1ef36b2e3f5757a/85786ef964da2d6c151e4b7800d0481b.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #64FFDA;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.member-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu-button {
+  transition: all 0.3s ease;
+}
+
+#mobile-menu a {
+  padding: 0.5rem 0;
+}

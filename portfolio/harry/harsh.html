@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh - Portfolio</title>
+  <link rel="stylesheet" href="harsh.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <div class="section-container row">
+      <div class="img-circle profile-pic">
+        <img src="harsh-image/profile.jpg" alt="Harry">
+      </div>
+      <div class="notification-box">
+        <h1>Hi, It's <span class="highlight">Harry Martillano</span></h1>
+        <h2>I'm an <span class="highlight">IT Student</span></h2>
+        <p class="description">
+          How could I have forgotten? It's survival of the fittest in this world. This world filled with violence, deception, and betrayal. Day by day, I've endured being mocked, and put up with a life-threatening journey where the risk outweighs the rewards. But even then, in order to survive, I've learned to keep my eyes open and look for opportunities.
+        </p>
+        <button class="button">Arise</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-container">
+      <div class="notification-box">
+      <h2 class="highlight">About Me</h2>
+      <p class="description">
+        I’m an IT Student who loves turning ideas into working products. When I’m not coding, you’ll probably find me playing online games, binge-watching anime, or enjoying listening to music. I believe a great cup of coffee and a solid playlist can fix almost anything.
+      </p>
+      <div class="img-circle" style="width: 10rem; height: 10rem;">
+        <img src="harsh-image/coffee.jpg" alt="Coffee">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-container row">
+      <div class="notification-box">
+        <h2 class="highlight">Skills</h2>
+        <ul>
+          <li>Some HTML, CSS, JavaScript</li>
+          <li>A little bit of Java</li>
+          <li>A little bit of Python</li>
+          <li>A little bit of Database</li>
+          <li>Shadow Extraction</li>
+          <li>Shadow Exchange</li>
+        </ul>
+      </div>
+      <div class="img-circle" style="width: 12rem; height: 12rem;">
+        <img src="harsh-image/skill.webp" alt="Studying">
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-container">
+      <div class="notification-box">
+        <h2 class="highlight">Projects</h2>
+  
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-box-image">
+            <img src="harsh-image/POS-SeniorHigh.png" alt="Project 1">
+          </div>
+          <div>
+            <h3>Em'sCarbonaraPizzaFoodHouse Billing System</h3>
+            <p class="description">
+              It's the thesis project we made during my Senior High. It's a POS System where my role is back-end.
+          </div>
+        </div>
+  
+        <div class="project-card">
+          <div class="project-box-image">
+            <img src="harsh-image/POS-1st-2nd.png" alt="Project 2">
+          </div>
+          <div>
+            <h3>Coffee Grind</h3>
+            <p class="description">
+              Coffee Grind is a POS System where my role is back-end. It's the Project we made during 1st year college 2nd Semester.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-box-image">
+            <img src="harsh-image/creddito.png" alt="Project 2">
+          </div>
+          <div>
+            <h3>Creddito</h3>
+            <p class="description">
+              Creddito is a Loan System where my role is back-end. It's the Project we made during 2nd year college 1st Semester.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-box-image">
+            <img src="harsh-image/thrift.png" alt="Project 2">
+          </div>
+          <div>
+            <h3>Project Thrift</h3>
+            <p class="description">
+              Project Thrift is a E-Commerce System where i did some back-end and front-end. It's the Project we made during 2nd year college 1st Semester.
+            </p>
+          </div>
+        </div>
+
+      </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <section id="education">
+    <div class="section-container row">
+      <div class="img-circle" style="width: 12rem; height: 12rem;">
+        <img src="harsh-image/study.avif" alt="Study">
+      </div>
+      <div class="notification-box">
+        <h2 class="highlight">Education</h2>
+        <p class="description">
+          Laguna State Polytechnic University<br>
+          Sta. Cruz, Laguna (2023 - Present)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-container">
+      <div class="notification-box">
+      <h2 class="highlight">Let's Work Together</h2>
+      <p class="description">
+        I'm always open to new opportunities and collaborations. Whether you have a project, a question, or just want to say hi — feel free to reach out!
+      </p>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:harrymartillano5@gmail.com">harrymartillano5@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:09267754711">09267754711</a></p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const button = document.querySelector('.button');
+    const profilePic = document.querySelector('.profile-pic');
+  
+    button.addEventListener('click', () => {
+      profilePic.classList.add('visible');
+    });
+  </script>
+  
+</body>
+</html>
+
