@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abllis, Ivan Joshua - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #1f2937, #000); /* Original background */
+      color: white;
+      line-height: 1.6;
+      padding-bottom: 100px;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6); /* Slight transparency for header */
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      color: #9ca3af;
+      margin-top: 5px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #9ca3af;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .contact-buttons {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #d1d5db;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 30px;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      .contact-buttons {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" alt="Abllis, Ivan Joshua">
+    <h1>Abllis, Ivan Joshua</h1>
+    <p>I'm a student of LSPU-SCC</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am an IT student who is willing to learn more about programming, and when there's no class, one of my hobbies is playing online games or studying programming languages.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Python, Java</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Database Management: MySQL, SQLite</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-buttons">
+        <a href="mailto:ivanablis30@gmail.com" class="button">Gmail</a>
+        <a href="https://github.com/Vanismz2324" class="button" target="_blank">GitHub</a>
+        <a href="tel:+639705517491" class="button">Call Me: +639705517491</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Abllis, Ivan Joshua. All Rights Reserved.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    function revealSections() {
+      const triggerBottom = window.innerHeight / 5 * 4;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.style.opacity = 1;
+          section.style.transform = 'translateY(0)';
+        } else {
+          section.style.opacity = 0;
+          section.style.transform = 'translateY(50px)';
+        }
+      });
+    }
+
+    // Initialize styles
+    sections.forEach(section => {
+      section.style.opacity = 0;
+      section.style.transform = 'translateY(50px)';
+      section.style.transition = 'all 0.5s ease-out';
+    });
+
+    // Reveal on load and scroll
+    window.addEventListener('load', revealSections);
+    window.addEventListener('scroll', revealSections);
+  </script>
+
+</body>
+</html>
